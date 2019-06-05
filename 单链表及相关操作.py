@@ -31,7 +31,7 @@ class List():
             self._head = Node(elem)
             return
         p = self._head
-        while(p is not None):
+        while p.next is not None:
             p = p.next
         p.next = Node(elem)
 
