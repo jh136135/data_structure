@@ -35,7 +35,7 @@ class List():
             p = p.next
         p.next = Node(elem)
 
-    def pop_last(self): #删除最后结点
+    def pop_last(self): #删除最后结点，必须找到倒数第二个结点
         if self._head is None:
             raise LinkedListUnderflow("pop failed")
         p = self._head
