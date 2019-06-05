@@ -39,7 +39,7 @@ class List():
         if self._head is None:
             raise LinkedListUnderflow("pop failed")
         p = self._head
-        if p.next is None:
+        if p.next is None:  #只有一个结点的情况
             e = p.elem
             self._head = None
             return e
